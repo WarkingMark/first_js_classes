@@ -1,0 +1,14 @@
+.content__audio-plyer {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    /* transform: translateX(-130%); */
+    transition: all ease 1.2s;
+    animation: showContentSlider 1.2s ease;
+}
+.content__audio-plyer .audio-player__title {
+    color:var(--white);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2%;
+}

@@ -1,0 +1,48 @@
+:root {
+	--black: #000;
+	--white: #fff;
+}
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+	background:inherit;
+	width: auto;   
+}
+::-webkit-scrollbar-thumb {
+	background-color:inherit; 
+}
+/*FireFox*/
+html {
+	scrollbar-color: inherit inherit;
+}
+body {
+	font-size: 10px;
+	font-family: sans-serif;
+	line-height: 1.7;
+	background-color: var(--black);
+	overflow-x: hidden;
+}
+.main {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	background-color: inherit;
+}
+.container {
+	/* max-width: 1900px; */
+	margin: 0 auto;
+}
+#main__header {
+	flex: 0 0 auto;
+	height: 5rem;
+	align-items: center;
+	margin-bottom: 4%;
+}
+#main__footer {
+	flex: 0 0 auto;
+}

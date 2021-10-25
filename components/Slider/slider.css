@@ -1,0 +1,89 @@
+.content__slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    transition: all ease 0.3s;
+    margin-bottom: 3%;
+    transform: translateX(-100%);
+    transition: all ease 1.2s;
+    animation: showContentSlider 1.2s ease;
+}
+.content__slider:hover {
+    background-color: rgb(0,0,0,0.4);
+}
+.content__slider .slider__arrow {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: all ease 0.3s;
+    background: inherit;
+}
+.content__slider .slider__arrow:hover {
+    background-color: rgb(0,0,0,0.4);;
+}
+.content__slider .slider__arrow span {
+    font-size: 3.0rem;
+    color:var(--white);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.content__slider .slider__arrow span:hover {
+    color:greenyellow;
+}
+.right {
+    padding: 0 1rem;
+    right: 0;
+    transition: all ease 0.3s;
+}
+.left {
+    padding: 0 1rem;
+    left: 0;
+    transition: all ease 0.3s;
+}
+.content__slider .slider__items {
+    width: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+    height: 90vh;
+}
+.content__slider .slider__items .items__item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex: 0 0 auto;
+    transition: all ease 0.3s;
+}
+.content__slider .slider__items .items__item .item__title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    
+}
+.content__slider .slider__items .items__item .item__title h2 {
+    font-size: 3rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.content__slider .slider__items .items__item .item__title .title__description {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0.08px;
+    -webkit-text-stroke-color: black;
+}
+@keyframes showAnimeBox {
+
+}
+.scroll-elem-slider-content {
+    transform: translateX(0%) !important;
+
+}

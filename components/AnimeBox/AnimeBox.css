@@ -1,0 +1,159 @@
+.content__anime-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3%;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all ease 1.2s;
+    animation: showAnimeBox 1.2s ease;
+}
+.content__anime-box .slider__items {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+.content__anime-box .slider__items .items__item{
+    display: flex;
+    flex-direction: column;
+    color:var(--white);
+    width: 100%;
+    flex: 2 0 auto;
+}
+.content__anime-box .slider__items .items__item .item__important{
+    display: flex;
+    flex-direction: row;
+    color:var(--white);
+    width: 100%;
+}
+.content__anime-box .slider__items .items__item .item__img {
+    display: flex;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;  
+    width:50%;
+}
+.content__anime-box .slider__arrow {
+    display: none;
+}
+.content__anime-box .slider__arrow span {
+    font-size: 3.0rem;
+    color:var(--white);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.content__anime-box .slider__arrow span:hover {
+    color:greenyellow;
+}
+.content__anime-box .slider__arrow:hover {
+    background-color: rgb(0,0,0,0.4);;
+}
+.content__anime-box .slider__items .items__item .item__img img {
+    width: 100%;
+    height: 100%;
+}
+.content__anime-box .slider__items .items__item .item__desription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0 5%;
+}
+.content__anime-box .anime-box__arrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    height: 100%;
+    transition: all ease 0.3s;
+    background: inherit;
+}
+.content__anime-box .anime-box__arrow span {
+    color:var(--white);
+    font-size: 3rem;
+}
+.content__anime-box .slider__items .items__item .item__videos {
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+    padding: 1rem;
+}
+.content__anime-box .slider__items .items__item .item__videos .videos__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+.content__anime-box .slider__items .items__item .item__videos .videos__item video{
+    width: 100%;
+}
+.content__anime-box .slider__items .items__item .item__videos .videos__item:last-child {
+    margin: 0;
+}
+.content__anime-box .item__desription .description__title {
+    font-size: 1.5rem;
+
+}
+.content__anime-box .item__desription .description__sub-title {
+    font-size: 1.5rem;
+    max-height: 20rem;
+    overflow: auto;
+
+}
+
+.content__anime-box .slider__items .items__item .videos__item .item__hover {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 87%;
+    margin: 0 auto;
+    inset: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.content__anime-box .slider__items .items__item .videos__item .item__hover .hover__icon {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    background-color:red;
+}
+.content__anime-box .slider__items .items__item .videos__item .item__hover .hover__icon:hover {
+    background-color: var(--white);
+}
+.content__anime-box .slider__items .items__item .videos__item .item__hover .hover__icon span:hover {
+    color:red;
+}
+.content__anime-box .slider__items .items__item .videos__item .item__hover .hover__icon span {
+    color:var(--white);
+    transition: all ease 0.3s;
+    font-size: 3rem;
+}
+.content__anime-box .slider__items .items__item .videos__item .item__hover:hover {
+    opacity: 1;
+}
+
+
+/*Animation*/ 
+@keyframes showAnimeBox {
+
+}
+.scroll-elem-slider {
+    transform: translateX(0%);
+}
